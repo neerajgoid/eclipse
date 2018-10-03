@@ -1,0 +1,31 @@
+package com.globant.neeraj.assignments;
+
+import java.util.Deque;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Scanner;
+
+public class LRU {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		// Enter data into hash map in form of key value,
+		// key as 1-3.
+		// value will be page nos
+		// 
+		Scanner scanner = new Scanner(System.in);
+		
+		Map<Integer, Node> hm = new HashMap<>();
+		
+			
+	
+		
+
+	}
+	
+	
+
+}

@@ -1,0 +1,10 @@
+package hashmapp;
+
+public class NullHMCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

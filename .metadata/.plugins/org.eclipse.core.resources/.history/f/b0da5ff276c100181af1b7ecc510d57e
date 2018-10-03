@@ -1,0 +1,21 @@
+package treemapp;
+
+import java.util.Map;
+import java.util.TreeMap;
+
+public class TmSortingValue {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+               /// need to run to code : 'TmEmployee.java'
+		Map<TmEmployee, TmEmployee> tm = new TreeMap<>();
+		
+		
+		TmEmployee tme1 = new TmEmployee("Neeraj", 10);
+		TmEmployee tme2 = new TmEmployee("Neeraja", 20);
+		TmEmployee tme3 = new TmEmployee("Akash", 30);
+		
+		
+	}
+
+}

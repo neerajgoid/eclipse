@@ -1,0 +1,92 @@
+package com.globant.neeraj.assignments;
+
+import java.util.Scanner;
+import java.util.Stack;
+
+public class Parenthesis {
+
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("Enter your string(in parenthesis form)");
+		String input = scanner.next();
+		//String input1 = "{{}[]}";
+		Stack<Character> stack = new Stack<>();
+		check(stack, input);
+	//	stack_push(input1,stack);
+
+	}
+	
+/*	public static void stack_push(String input,Stack<Character> stack) {
+	
+		for(int itr=0;itr<input.length();itr++)
+		{
+			stack.push(input.charAt(itr));
+		}
+		
+	}
+*/	
+	public static void check(Stack<Character> stack,String input) {
+		
+		char c1;
+		char c2;
+		
+		
+		
+		
+		for(int itr=0;itr<input.length();itr++)
+		{
+		//	stack.push(input.charAt(itr));
+		//	c2 = input.charAt(itr+1);
+	//		if(!stack.empty()) {	
+			
+			if(stack.empty())
+			{
+				stack.push(input.charAt(itr));
+			}
+				c1 = stack.peek();
+			
+					
+					c2 = input.charAt(itr+1);
+			
+					if((c1=='{' && c2 =='}') || (c1=='(' && c2 ==')') || (c1=='[' && c2 ==']') ) {
+						stack.pop();
+								itr++;
+						System.out.println("Match found");
+					}
+					else {
+						stack.push(c2);
+			//	itr++;
+					}	
+				
+		//	}
+		}
+		
+		if(stack.empty())
+		{
+			System.out.println("Perfect ");
+		}
+		else
+		{
+			System.out.println("Not perfect");
+		}
+		
+	}
+/*		
+		while(!stack.empty()) {
+			
+			c1= stack.pop();
+			c2=stack.pop();
+		
+			if((c1=='{' && c2 =='}') || (c1=='(' && c2 ==')') || (c1=='[' && c2 ==']') ) {
+				System.out.println("Match");
+			}
+		
+		} */
+	}
+	
+	
+	
+	
+
+

@@ -1,0 +1,14 @@
+package treemapp;
+
+public class TmEmployee {
+
+	String name;
+	int salary;
+	TmEmployee(String name,int salary)
+	{
+		this.name=name;
+		this.salary=salary;
+	}
+	
+	
+}

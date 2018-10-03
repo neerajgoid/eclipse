@@ -1,0 +1,94 @@
+package com.globant.neeraj.assignments;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.Scanner;
+
+public class Main
+{
+	
+	
+	
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+	//	Employee neeraj = new Employee("Neeraj", 1, 20);
+	//	Employee akash = new Employee("Akash", 1, 30);
+	//	Employee anirudh = new Employee("Anirudh", 1, 25);
+	//	Employee neeraj1 = new Employee("Neeraj",2,25);
+		
+		System.out.println("Enter no of users");
+		int num = sc.nextInt();
+//		Employee e[];
+		ArrayList<Employee> al = new ArrayList<>(); 
+		for(int i=0;i<num;i++)
+		{
+			System.out.println("Enter name");
+			String inputName = sc.next();
+			System.out.println("Enter age");
+			int inputAge = sc.nextInt();
+			
+			Iterator<Employee> itr = al.iterator();
+			while(itr.hasNext())
+			{
+				Employee e = (Employee) itr.next();
+				if(e.getName()==inputName)
+					
+			}
+		// e[i]= new Employee(inputName,inputAge,inputAge);
+		 al.add(new Employee(inputName, inputAge, inputAge));
+		 
+		}
+		
+		
+	//Adding into ArrayList
+
+	//	al.add(neeraj);
+	//	al.add(neeraj1);
+	//	al.add(anirudh);
+	//	al.add(akash);
+		Collections.sort(al);
+		display(al);
+		search(al);
+	}
+	
+	public static void display(ArrayList<Employee> al) {
+		Iterator<Employee> itr = al.iterator(); 
+		while(itr.hasNext())
+		{
+			Employee e = (Employee) itr.next();
+			System.out.println("Employee details: Name:" + e.getName() +"Age:"+ e.getAge() +"Id:"+ e.getId());
+		}
+		
+	}
+	
+	public static void search(ArrayList<Employee> al) {
+		Iterator<Employee> itr = al.iterator();
+		Scanner sc = new Scanner(System.in);
+		int flag=0;
+		System.out.println("Enter the name you want to search for");
+		String name = sc.nextLine();
+		System.out.println("Enter id you want to search for");
+		int id = sc.nextInt();
+		
+		while(itr.hasNext()) {
+			Employee e = (Employee) itr.next();
+			if(e.getName().equals(name) && e.getId()==id) {
+				flag=1;
+			}
+			
+			if(flag==1) {
+				
+				System.out.println("Found");
+				break;
+			}
+			else
+				System.out.println("Not Found");
+				
+		}
+	}
+	
+	
+
+

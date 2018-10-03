@@ -1,0 +1,20 @@
+package hashmapp;
+
+import java.util.HashMap;
+import java.util.Map;
+
+public class NullHMCheck {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		
+		Map<Integer, Integer> hm = new HashMap<>();
+		
+		hm.put(null, 0);
+		hm.put(1, null);
+		hm.put(null, 2);
+		
+
+	}
+
+}

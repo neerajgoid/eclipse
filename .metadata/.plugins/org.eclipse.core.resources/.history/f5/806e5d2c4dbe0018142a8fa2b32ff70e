@@ -1,0 +1,9 @@
+package com.globant.neeraj.assignments;
+
+public class Employee {
+
+	public Employee()
+	{
+		
+	}
+}
