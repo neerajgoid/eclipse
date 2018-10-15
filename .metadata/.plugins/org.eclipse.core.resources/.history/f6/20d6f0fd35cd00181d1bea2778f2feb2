@@ -1,0 +1,12 @@
+package jdbc;
+// customer table with 2 para - cust id and name. id is primary key.
+// product table - product id, name ,category . it is ordered by category and then name
+// order table - order id, cust id, products and quantity.
+public class Connection {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
