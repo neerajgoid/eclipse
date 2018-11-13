@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns = "http://www.springframework.org/schema/beans"
+   xmlns:xsi = "http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation = "http://www.springframework.org/schema/beans
+   http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+   
+   <bean id ="tri123" class="com.neeraj.javabrains.Triangle">
+	<property name="rollNo" value="3144036"></property>
+	<constructor-arg value="22"> </constructor-arg>
+  
+   </bean>
+   
+  </beans>
+  
+  <!-- COMMENTS********************* -->
+     <!-- id is the identifier. we specify this id in the getBean method to retrieve the bean
+   class basically refers to the name of the the class whose object has to be created.
+  property tag is used to set default values for member variables. The property tag uses the 
+  setter method inside the class. 
+  
+  <constructor-arg> tag is for constructor injection
+  
+   -->
