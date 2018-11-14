@@ -3,10 +3,15 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.mvc</groupId>
   <artifactId>MvcAnnotation</artifactId>
-  <packaging>war</packaging>
+   <packaging>war</packaging>
   <version>0.0.1-SNAPSHOT</version>
   <name>MvcAnnotation Maven Webapp</name>
   <url>http://maven.apache.org</url>
+  
+  <properties>
+    <failOnMissingWebXml>false</failOnMissingWebXml>
+</properties>
+
   <dependencies>
  <dependency>
       <groupId>junit</groupId>

@@ -43,7 +43,7 @@ public class Customer {
 
 			statement = con.createStatement();
 			rs = statement.executeQuery(query);
-			System.out.println("Product Id	Name	\tCategory");
+			//System.out.println("Product Id	Name	\tCategory");
 			
 			while (rs.next()) {
 		//		System.out.println("\t" + rs.getInt(1) + "\t" + rs.getString(2) + "\t\t");
